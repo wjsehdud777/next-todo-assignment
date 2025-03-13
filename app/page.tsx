@@ -1,7 +1,12 @@
+import TodoList from "@/components/todo/TodoList";
 import React from "react";
 
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <section>
+      <TodoList />
+    </section>
+  );
 };
 
 export default HomePage;
