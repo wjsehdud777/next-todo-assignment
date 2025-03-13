@@ -9,13 +9,13 @@ export const getTodos = async () => {
   return data;
 };
 
-export const createTOdo = async (text: string) => {
+export const createTodo = async (text: string) => {
   const response = await fetch(BASE_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ text, Completed: false }),
+    body: JSON.stringify({ text, completed: false }),
   });
 
   const data: Todo = await response.json();
